@@ -3,7 +3,6 @@ package com.gsb.suividevosfrais;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
@@ -11,40 +10,37 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageView;
 
-import static com.gsb.suividevosfrais.R.id.datRepas;
-
 /**
- * Created by L.R. on 22/03/17.
+ * Created by nymroe on 22/03/17.
  */
 
-public class RepasActivity extends Activity {
+public class EtapeActivity extends Activity {
 
     // informations affichées dans l'activité
-    private Integer annee;
-    private Integer mois;
-    private Integer qte;
+    private Integer annee ;
+    private Integer mois ;
+    private Integer qte ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_repas);
+        setContentView(R.layout.activity_etape);
         // modification de l'affichage du DatePicker
-        Global.changeAfficheDate((DatePicker) findViewById(datRepas));
+        Global.changeAfficheDate((DatePicker) findViewById(R.id.datEtape)) ;
         // valorisation des propriétés
-        valoriseProprietes();
+        valoriseProprietes() ;
         // chargement des méthodes événementielles
-        imgReturn_clic();
-        cmdValider_clic();
-        cmdPlus_clic();
-        cmdMoins_clic();
-        dat_clic();
+        imgReturn_clic() ;
+        cmdValider_clic() ;
+        cmdPlus_clic() ;
+        cmdMoins_clic() ;
+        dat_clic() ;
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.repas, menu);
+        getMenuInflater().inflate(R.menu.etape, menu);
         return true;
     }
 
@@ -52,73 +48,73 @@ public class RepasActivity extends Activity {
      * Valorisation des propriétés avec les informations affichées
      */
     private void valoriseProprietes() {
-        annee = ((DatePicker) findViewById(R.id.datRepas)).getYear();
-        mois = ((DatePicker) findViewById(R.id.datRepas)).getMonth() + 1;
+        annee = ((DatePicker)findViewById(R.id.datEtape)).getYear() ;
+        mois = ((DatePicker)findViewById(R.id.datEtape)).getMonth() + 1 ;
         // récupération de la qte correspondant au mois actuel
-        qte = 0;
-        Integer key = annee * 100 + mois;
+        qte = 0 ;
+        Integer key = annee*100+mois ;
         if (Global.listFraisMois.containsKey(key)) {
-            qte = Global.listFraisMois.get(key).getRepas();
+            qte = Global.listFraisMois.get(key).getEtape() ;
         }
-        ((EditText) findViewById(R.id.txtRepas)).setText(qte.toString());
+        ((EditText)findViewById(R.id.txtEtape)).setText(qte.toString()) ;
     }
 
     /**
      * Sur la selection de l'image : retour au menu principal
      */
     private void imgReturn_clic() {
-        ((ImageView) findViewById(R.id.imgRepasReturn)).setOnClickListener(new ImageView.OnClickListener() {
+        ((ImageView)findViewById(R.id.imgEtapeReturn)).setOnClickListener(new ImageView.OnClickListener() {
             public void onClick(View v) {
-                retourActivityPrincipale();
+                retourActivityPrincipale() ;
             }
-        });
+        }) ;
     }
 
     /**
      * Sur le clic du bouton valider : sérialisation
      */
     private void cmdValider_clic() {
-        ((Button) findViewById(R.id.cmdRepasValider)).setOnClickListener(new Button.OnClickListener() {
+        ((Button)findViewById(R.id.cmdEtapeValider)).setOnClickListener(new Button.OnClickListener() {
             public void onClick(View v) {
-                Serializer.serialize(Global.filename, Global.listFraisMois, RepasActivity.this);
-                retourActivityPrincipale();
+                Serializer.serialize(Global.filename, Global.listFraisMois, EtapeActivity.this) ;
+                retourActivityPrincipale() ;
             }
-        });
+        }) ;
     }
 
     /**
      * Sur le clic du bouton plus : ajout de 10 dans la quantité
      */
     private void cmdPlus_clic() {
-        ((Button) findViewById(R.id.cmdRepasPlus)).setOnClickListener(new Button.OnClickListener() {
+        ((Button)findViewById(R.id.cmdEtapePlus)).setOnClickListener(new Button.OnClickListener() {
             public void onClick(View v) {
-                qte += 1;
-                enregNewQte();
+                qte+=1 ;
+                enregNewQte() ;
             }
-        });
+        }) ;
     }
 
     /**
      * Sur le clic du bouton moins : enlève 10 dans la quantité si c'est possible
      */
     private void cmdMoins_clic() {
-        ((Button) findViewById(R.id.cmdRepasMoins)).setOnClickListener(new Button.OnClickListener() {
+        ((Button)findViewById(R.id.cmdEtapeMoins)).setOnClickListener(new Button.OnClickListener() {
             public void onClick(View v) {
-                qte = Math.max(0, qte - 1); // suppression de 10 si possible
-                enregNewQte();
+                qte = Math.max(0, qte-1) ; // suppression de 10 si possible
+                enregNewQte() ;
             }
-        });
+        }) ;
     }
 
     /**
      * Sur le changement de date : mise à jour de l'affichage de la qte
      */
     private void dat_clic() {
-        final DatePicker uneDate = (DatePicker) findViewById(R.id.datRepas);
-        uneDate.init(uneDate.getYear(), uneDate.getMonth(), uneDate.getDayOfMonth(), new DatePicker.OnDateChangedListener() {
+        final DatePicker uneDate = (DatePicker)findViewById(R.id.datEtape) ;
+        uneDate.init(uneDate.getYear(), uneDate.getMonth(), uneDate.getDayOfMonth(), new DatePicker.OnDateChangedListener(){
             @Override
             public void onDateChanged(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
-                valoriseProprietes();
+                valoriseProprietes() ;
             }
         });
     }
@@ -128,25 +124,22 @@ public class RepasActivity extends Activity {
      */
     private void enregNewQte() {
         // enregistrement dans la zone de texte
-        ((EditText) findViewById(R.id.txtRepas)).setText(qte.toString());
+        ((EditText)findViewById(R.id.txtEtape)).setText(qte.toString()) ;
         // enregistrement dans la liste
-        Integer key = annee * 100 + mois;
+        Integer key = annee*100+mois ;
         if (!Global.listFraisMois.containsKey(key)) {
             // creation du mois et de l'annee s'ils n'existent pas déjà
-            Global.listFraisMois.put(key, new FraisMois(annee, mois));
+            Global.listFraisMois.put(key, new FraisMois(annee, mois)) ;
         }
-        Global.listFraisMois.get(key).setRepas(qte);
+        Global.listFraisMois.get(key).setEtape(qte) ;
     }
 
     /**
      * Retour à l'activité principale (le menu)
      */
     private void retourActivityPrincipale() {
-        Intent intent = new Intent(RepasActivity.this, MainActivity.class) ;
+        Intent intent = new Intent(EtapeActivity.this, MainActivity.class) ;
         startActivity(intent) ;
     }
-
-
-
 
 }

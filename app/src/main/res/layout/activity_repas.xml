@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Repas" >
+    tools:context=".RepasActivity" >
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -21,7 +21,7 @@
             android:padding="5dp" >
 
             <ImageView
-                android:id="@+id/imgKmReturn"
+                android:id="@+id/imgRepasReturn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -37,7 +37,7 @@
             android:paddingTop="20dp" >
 
             <DatePicker
-                android:id="@+id/datKm"
+                android:id="@+id/datRepas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center" />
@@ -57,11 +57,11 @@
                 android:paddingLeft="10dp" >
 
                 <TextView
-                    android:id="@+id/lblKm"
+                    android:id="@+id/lblRepas"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Km"
+                    android:text="Repas"
                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
             </LinearLayout>
@@ -73,7 +73,7 @@
                 android:paddingRight="10dp" >
 
                 <EditText
-                    android:id="@+id/txtKm"
+                    android:id="@+id/txtRepas"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -96,14 +96,14 @@
                 android:paddingLeft="5dp" >
 
                 <Button
-                    android:id="@+id/cmdKmPlus"
+                    android:id="@+id/cmdRepasPlus"
                     android:layout_width="45dp"
                     android:layout_height="45dp"
                     android:text="+"
                     android:textSize="20sp" />
 
                 <Button
-                    android:id="@+id/cmdKmMoins"
+                    android:id="@+id/cmdRepasMoins"
                     android:layout_width="45dp"
                     android:layout_height="45dp"
                     android:text="-"
@@ -112,21 +112,21 @@
             </LinearLayout>
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:paddingTop="20dp" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingTop="20dp" >
 
-            <Button
-                android:id="@+id/cmdKmValider"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Valider" />
+        <Button
+            android:id="@+id/cmdRepasValider"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Valider" />
 
         </LinearLayout>
     </LinearLayout>
 
-</LinearLayout>
+</RelativeLayout>

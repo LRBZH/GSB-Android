@@ -1,5 +1,13 @@
 [
     {
+        "merged": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/build/intermediates/res/merged/debug/layout/activity_nuitee.xml",
+        "source": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/layout/activity_nuitee.xml"
+    },
+    {
+        "merged": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/build/intermediates/res/merged/debug/layout/activity_etape.xml",
+        "source": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/layout/activity_etape.xml"
+    },
+    {
         "merged": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/build/intermediates/res/merged/debug/layout/layout_liste.xml",
         "source": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/layout/layout_liste.xml"
     },
@@ -10,6 +18,10 @@
     {
         "merged": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
         "source": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/build/intermediates/res/merged/debug/layout/activity_repas.xml",
+        "source": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/layout/activity_repas.xml"
     },
     {
         "merged": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/build/intermediates/res/merged/debug/layout/activity_km.xml",
