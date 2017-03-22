@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/build/intermediates/res/merged/debug/menu/etape.xml",
+        "source": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/menu/etape.xml"
+    },
+    {
+        "merged": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/build/intermediates/res/merged/debug/menu/hf.xml",
+        "source": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/menu/hf.xml"
+    },
+    {
+        "merged": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/build/intermediates/res/merged/debug/menu/repas.xml",
+        "source": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/menu/repas.xml"
+    },
+    {
+        "merged": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/build/intermediates/res/merged/debug/menu/main.xml",
+        "source": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/menu/main.xml"
+    },
+    {
+        "merged": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/build/intermediates/res/merged/debug/menu/frais_km.xml",
+        "source": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/menu/frais_km.xml"
+    },
+    {
+        "merged": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/build/intermediates/res/merged/debug/menu/layout_liste.xml",
+        "source": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/menu/layout_liste.xml"
+    },
+    {
+        "merged": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/build/intermediates/res/merged/debug/menu/nuitee.xml",
+        "source": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/menu/nuitee.xml"
+    },
+    {
+        "merged": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/build/intermediates/res/merged/debug/menu/hf_recap.xml",
+        "source": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/menu/hf_recap.xml"
+    }
+]

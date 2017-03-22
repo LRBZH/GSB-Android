@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/build/intermediates/res/merged/debug/drawable-hdpi/frais_etape.png",
+        "source": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/drawable-hdpi/frais_etape.png"
+    },
+    {
+        "merged": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/build/intermediates/res/merged/debug/drawable-hdpi/frais_km.png",
+        "source": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/drawable-hdpi/frais_km.png"
+    },
+    {
+        "merged": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/build/intermediates/res/merged/debug/drawable-hdpi/frais_nuitee.png",
+        "source": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/drawable-hdpi/frais_nuitee.png"
+    },
+    {
+        "merged": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/build/intermediates/res/merged/debug/drawable-hdpi/frais_repas.png",
+        "source": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/drawable-hdpi/frais_repas.png"
+    },
+    {
+        "merged": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/build/intermediates/res/merged/debug/drawable-hdpi/frais_hf_recap.png",
+        "source": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/drawable-hdpi/frais_hf_recap.png"
+    },
+    {
+        "merged": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_launcher.png",
+        "source": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/drawable-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/build/intermediates/res/merged/debug/drawable-hdpi/frais_hf.png",
+        "source": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/drawable-hdpi/frais_hf.png"
+    },
+    {
+        "merged": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/build/intermediates/res/merged/debug/drawable-hdpi/logogsb.png",
+        "source": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/drawable-hdpi/logogsb.png"
+    },
+    {
+        "merged": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/build/intermediates/res/merged/debug/drawable-hdpi/suppr.png",
+        "source": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/drawable-hdpi/suppr.png"
+    },
+    {
+        "merged": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/build/intermediates/res/merged/debug/drawable-hdpi/transfert.png",
+        "source": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/drawable-hdpi/transfert.png"
+    }
+]
