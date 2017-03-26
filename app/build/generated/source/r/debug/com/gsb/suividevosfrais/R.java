@@ -27,7 +27,8 @@ public final class R {
         public static final int transfert=0x7f020009;
     }
     public static final class id {
-        public static final int action_settings=0x7f080031;
+        public static final int action_settings=0x7f080032;
+        public static final int btnHfSuppr=0x7f080031;
         public static final int cmdEtape=0x7f08001a;
         public static final int cmdEtapeMoins=0x7f080005;
         public static final int cmdEtapePlus=0x7f080004;

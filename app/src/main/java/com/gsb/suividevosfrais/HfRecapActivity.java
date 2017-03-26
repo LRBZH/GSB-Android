@@ -1,6 +1,8 @@
 package com.gsb.suividevosfrais;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.widget.DatePicker.OnDateChangedListener;
@@ -54,6 +56,8 @@ public class HfRecapActivity extends Activity {
 		ListView listView = (ListView)findViewById(R.id.lstHfRecap) ;
 		FraisHfAdapter adapter = new FraisHfAdapter(HfRecapActivity.this, liste, key) ;
 		listView.setAdapter(adapter) ;
+
+
 	}
 	
 	/**
@@ -79,8 +83,16 @@ public class HfRecapActivity extends Activity {
 			}
     	});       	
     }
-    
-    
+
+	/**
+	 * Sur le clic du bouton Suppr : on supprime le frais hors-forfait de la liste
+	 */
+	private void suppr_clic() {
+
+		//A COMPLETER
+
+	}
+
 
 	/**
 	 * Retour à l'activité principale (le menu)

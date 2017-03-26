@@ -52,11 +52,10 @@
 
             <ListView
                 android:id="@+id/lstHfRecap"
-                android:layout_width="fill_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" >
+                android:layout_weight="1">
             </ListView>
-
         </LinearLayout>
 
     </LinearLayout>

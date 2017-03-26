@@ -26,7 +26,7 @@
 
     <TextView
         android:id="@+id/txtListMontant"
-        android:layout_width="0dp"
+        android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_weight="1.5"
         android:gravity="right"
@@ -46,11 +46,20 @@
 
     <TextView
         android:id="@+id/txtListMotif"
-        android:layout_width="0dp"
+        android:layout_width="180dp"
         android:layout_height="40dp"
         android:layout_weight="3.5"
         android:paddingLeft="4dp"
         android:paddingRight="2dp"
         android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/btnHfSuppr"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:paddingLeft="4dp"
+        android:paddingRight="2dp"
+        android:src="@drawable/suppr" />
 
 </LinearLayout>
