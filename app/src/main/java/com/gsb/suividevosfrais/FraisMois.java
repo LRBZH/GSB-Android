@@ -1,5 +1,7 @@
 package com.gsb.suividevosfrais;
 
+import android.util.Log;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 
@@ -41,6 +43,8 @@ public class FraisMois implements Serializable {
 	 * @param index
 	 */
 	public void supprFraisHf(Integer index) {
+
+		Log.d("MyLog", "supprFraisHf: index = " + index);
 		lesFraisHf.remove(index) ;
 	}
 	

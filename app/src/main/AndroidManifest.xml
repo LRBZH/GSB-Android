@@ -46,10 +46,10 @@
             android:name="com.gsb.suividevosfrais.HfRecapActivity"
             android:label="@string/title_activity_hf_recap" >
         </activity>
-        <activity
+        <!-- <activity
             android:name="com.gsb.suividevosfrais.LayoutListe"
             android:label="@string/title_activity_layout_liste" >
-        </activity>
+        </activity>-->
     </application>
 
 </manifest>
