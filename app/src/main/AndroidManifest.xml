@@ -51,5 +51,6 @@
             android:label="@string/title_activity_layout_liste" >
         </activity>-->
     </application>
-
+    <uses-permission android:name="android.permission.INTERNET" />//permet la connexion distante
+    HTTP
 </manifest>
