@@ -2,15 +2,22 @@ package com.gsb.suividevosfrais;
 
 import android.util.Log;
 
+import org.json.JSONArray;
+
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Classe métier contenant les informations des frais d'un mois
  *
  */
 public class FraisMois implements Serializable {
+	//Identification du visiteur qui se connecte à l'application
+	private String nom;
+	private String prenom;
 
+	//Propriétés des frais du mois
 	private Integer mois ; // mois concerné
 	private Integer annee ; // année concernée
 	private Integer etape ; // nombre d'étapes du mois
@@ -20,6 +27,9 @@ public class FraisMois implements Serializable {
 	private ArrayList<FraisHf> lesFraisHf ; // liste des frais hors forfait du mois
 	
 	public FraisMois(Integer annee, Integer mois) {
+		this.nom = "";
+		this.prenom = "";
+
 		this.annee = annee ;
 		this.mois = mois ;
 		this.etape = 0 ;
@@ -98,6 +108,48 @@ public class FraisMois implements Serializable {
 	
 	public ArrayList<FraisHf> getLesFraisHf() {
 		return lesFraisHf ;
+	}
+
+	public String getNom() {
+		return nom;
+	}
+
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	public String getPrenom() {
+		return prenom;
+	}
+
+	public void setPrenom(String prenom) {
+		this.prenom = prenom;
+	}
+
+	public void setLesFraisHf(ArrayList<FraisHf> lesFraisHf) {
+		this.lesFraisHf = lesFraisHf;
+	}
+
+	public JSONArray converToJSONArray() {
+		List liste = new ArrayList();
+
+		//gérer le tableau des frais de plusieurs mois :
+		//?????
+
+		//infos visiteur
+		liste.add(nom);
+		liste.add(prenom);
+		//infos mois
+		liste.add(annee);
+		liste.add(mois);
+		//infos Frais Forfait
+		liste.add(etape);
+		liste.add(km);
+		liste.add(nuitee);
+		liste.add(repas);
+		//infos Frais HF
+		//liste.add(lesFraisHf); //à mettre en array aussi ?
+		return new JSONArray(liste);
 	}
 	
 }

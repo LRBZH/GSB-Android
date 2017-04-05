@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 
 /**
- * Created by nymroe on 22/03/17.
+ * Created by l.r. on 22/03/17.
  */
 
 public class EtapeActivity extends Activity {

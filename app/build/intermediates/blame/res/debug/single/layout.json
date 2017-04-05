@@ -4,6 +4,10 @@
         "source": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/layout/activity_nuitee.xml"
     },
     {
+        "merged": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/build/intermediates/res/merged/debug/layout/activity_transfert.xml",
+        "source": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/layout/activity_transfert.xml"
+    },
+    {
         "merged": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/build/intermediates/res/merged/debug/layout/activity_etape.xml",
         "source": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/layout/activity_etape.xml"
     },

@@ -34,9 +34,5 @@
     {
         "merged": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/build/intermediates/res/merged/debug/drawable-hdpi/suppr.png",
         "source": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/drawable-hdpi/suppr.png"
-    },
-    {
-        "merged": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/build/intermediates/res/merged/debug/drawable-hdpi/transfert.png",
-        "source": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/drawable-hdpi/transfert.png"
     }
 ]

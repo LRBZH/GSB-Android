@@ -96,5 +96,6 @@
     <orderEntry type="jdk" jdkName="Android API 17 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="support-v4-18.0.0" level="project" />
+    <orderEntry type="library" exported="" name="_home_nymroe_Cours_bundlePPE2_platforms_android_17_optional_org_apache_http_legacy_jar-android-17" level="project" />
   </component>
 </module>

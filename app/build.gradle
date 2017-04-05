@@ -4,6 +4,7 @@ android {
     compileSdkVersion 17
     buildToolsVersion "25.0.2"
     compileOptions.encoding = 'ISO-8859-1' // write your encoding here
+    useLibrary 'org.apache.http.legacy'
 
     defaultConfig {
         applicationId "com.gsb.suividevosfrais"
