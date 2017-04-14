@@ -24,7 +24,7 @@ public abstract class Serializer {
 
 	/**
 	 * Sérialisation d'un objet
-	 * @param namefile
+	 * @param filename
 	 * @param object
 	 */
 	public static void serialize(String filename, Object object, Context context) {
@@ -36,6 +36,7 @@ public abstract class Serializer {
 				oos.writeObject(object) ;
 				oos.flush() ;
 				oos.close() ;
+				Log.d("Tools : ", "object serialized: ");
 			} catch (IOException e) {
 				// erreur de sérialisation
 				e.printStackTrace();

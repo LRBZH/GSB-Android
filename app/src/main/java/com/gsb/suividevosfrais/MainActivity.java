@@ -25,10 +25,16 @@ import android.widget.Button;
 public class MainActivity extends Activity {
 
     private static AccesDistant accesDistant;
+    public static final int RESULT_Main = 1; //pour le résultat
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        //Appel de la page de Login
+        if (Global.loginVisiteur.size() == 0) {
+            startActivityForResult(new Intent(MainActivity.this, AccueilActivity.class), RESULT_Main);
+        }
         setContentView(R.layout.activity_main);
         // récupération des informations sérialisées
         recupSerialize() ;
@@ -41,6 +47,8 @@ public class MainActivity extends Activity {
         cmdMenu_clic(((Button)findViewById(R.id.cmdHfRecap)), HfRecapActivity.class) ;
         cmdMenu_clic(((Button) findViewById(R.id.cmdTransfert)), Transfert.class);
         cmdTransfert_clic() ;
+        cmdLogout_clic();
+
     }
 
     @Override
@@ -85,13 +93,42 @@ public class MainActivity extends Activity {
 
                 accesDistant = new AccesDistant();
                 Log.d("MyLog", "accesDistant: " + accesDistant);
-                accesDistant.envoi("connexion", new JSONArray());
+                accesDistant.envoi("enreg", new JSONArray());
 
-                //for (int i = 0; i< Global.listFraisMois.size(); i++) {
 
-                //accesDistant.envoi("enreg", Global.listFraisMois.get(201703).converToJSONArray());
-                //}
             }
-    	}) ;
+        }) ;
     }
+
+    /**
+     * Ecouteur sur le bouton logout
+     */
+    private void cmdLogout_clic() {
+        Button button = (Button) findViewById(R.id.cmdLogout);
+        // Création du listener du bouton cancel (on sort de l'appli)
+        button.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                quit(false, null);
+            }
+
+        });
+    }
+
+    /**
+     * Méthode pour sortir de l'application
+     *
+     * @param success
+     * @param i
+     */
+    public void quit(boolean success, Intent i) {
+        // On envoie un résultat qui va permettre de quitter l'appli
+        Global.loginVisiteur.clear();
+        setResult((success) ? Activity.RESULT_OK : Activity.RESULT_CANCELED, i);
+        finish();
+
+    }
+
+
+
 }

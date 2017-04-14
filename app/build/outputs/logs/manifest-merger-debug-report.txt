@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:2:1-56:12
+ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:2:1-59:12
 	package
 		ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:3:5-38
 		INJECTED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml
@@ -26,7 +26,7 @@ ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidMan
 		INJECTED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml
 		INJECTED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml
 application
-ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:11:5-53:19
+ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:11:5-56:19
 	android:label
 		ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:14:9-41
 	android:allowBackup
@@ -51,43 +51,47 @@ category#android.intent.category.LAUNCHER
 ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:22:17-77
 	android:name
 		ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:22:27-74
+activity#com.gsb.suividevosfrais.AccueilActivity
+ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:25:9-27:20
+	android:name
+		ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:26:13-67
 activity#com.gsb.suividevosfrais.KmActivity
-ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:25:9-28:20
+ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:28:9-31:20
 	android:label
-		ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:27:13-60
+		ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:30:13-60
 	android:name
-		ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:26:13-62
+		ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:29:13-62
 activity#com.gsb.suividevosfrais.RepasActivity
-ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:29:9-32:20
+ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:32:9-35:20
 	android:label
-		ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:31:13-47
+		ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:34:13-47
 	android:name
-		ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:30:13-65
+		ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:33:13-65
 activity#com.gsb.suividevosfrais.NuiteeActivity
-ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:33:9-36:20
+ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:36:9-39:20
 	android:label
-		ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:35:13-47
+		ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:38:13-47
 	android:name
-		ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:34:13-66
+		ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:37:13-66
 activity#com.gsb.suividevosfrais.EtapeActivity
-ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:37:9-40:20
+ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:40:9-43:20
 	android:label
-		ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:39:13-47
+		ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:42:13-47
 	android:name
-		ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:38:13-65
+		ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:41:13-65
 activity#com.gsb.suividevosfrais.HfActivity
-ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:41:9-44:20
+ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:44:9-47:20
 	android:label
-		ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:43:13-54
+		ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:46:13-54
 	android:name
-		ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:42:13-62
+		ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:45:13-62
 activity#com.gsb.suividevosfrais.HfRecapActivity
-ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:45:9-48:20
+ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:48:9-51:20
 	android:label
-		ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:47:13-60
+		ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:50:13-60
 	android:name
-		ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:46:13-67
+		ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:49:13-67
 uses-permission#android.permission.INTERNET
-ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:54:5-67
+ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:57:5-67
 	android:name
-		ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:54:22-64
+		ADDED from /home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/AndroidManifest.xml:57:22-64

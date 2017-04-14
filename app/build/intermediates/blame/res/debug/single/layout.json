@@ -8,6 +8,10 @@
         "source": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/layout/activity_transfert.xml"
     },
     {
+        "merged": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/build/intermediates/res/merged/debug/layout/activity_accueil.xml",
+        "source": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/layout/activity_accueil.xml"
+    },
+    {
         "merged": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/build/intermediates/res/merged/debug/layout/activity_etape.xml",
         "source": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/layout/activity_etape.xml"
     },

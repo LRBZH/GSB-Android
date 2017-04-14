@@ -25,6 +25,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.gsb.suividevosfrais.AccueilActivity" >
+        </activity>
         <activity
             android:name="com.gsb.suividevosfrais.KmActivity"
             android:label="@string/title_activity_frais_km" >
