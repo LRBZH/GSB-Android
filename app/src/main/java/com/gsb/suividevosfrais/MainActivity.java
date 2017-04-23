@@ -32,7 +32,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         //Appel de la page de Login
-        if (Global.loginVisiteur.size() == 0) {
+        if (Global.loginVisiteur.size() <= 2) {
             startActivityForResult(new Intent(MainActivity.this, AccueilActivity.class), RESULT_Main);
         }
         setContentView(R.layout.activity_main);
@@ -124,6 +124,7 @@ public class MainActivity extends Activity {
     public void quit(boolean success, Intent i) {
         // On envoie un résultat qui va permettre de quitter l'appli
         Global.loginVisiteur.clear();
+        Global.repServeur = false;
         setResult((success) ? Activity.RESULT_OK : Activity.RESULT_CANCELED, i);
         finish();
 

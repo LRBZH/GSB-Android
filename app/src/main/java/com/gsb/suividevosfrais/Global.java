@@ -26,6 +26,8 @@ public abstract class Global {
 	// fichier contenant les informations sérialisées
 	public static final String filename = new String("save.fic") ;
 
+    public static boolean repServeur = false;
+
 	/**
 	 * Modification de l'affichage de la date (juste le mois et l'année, sans le jour)
 	 */
@@ -48,5 +50,5 @@ public abstract class Global {
 		    Log.d("ERROR", e.getMessage());
 		}	
 	}
-	
+
 }

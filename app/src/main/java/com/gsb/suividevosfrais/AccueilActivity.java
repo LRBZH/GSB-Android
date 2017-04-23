@@ -38,6 +38,8 @@ public class AccueilActivity extends Activity {
         // chargement des méthodes événementielles
         cmdLogin_clic(this.login, this.password);
 
+        Global.loginVisiteur.clear();
+
 
     }
 
@@ -45,21 +47,24 @@ public class AccueilActivity extends Activity {
     /**
      * Sur le clic du bouton valider : sérialisation
      */
-    private void cmdLogin_clic(final String leLogin, final String lePwd) {
+    private synchronized void cmdLogin_clic(final String leLogin, final String lePwd) {
         ((Button) findViewById(R.id.cmdLogin)).setOnClickListener(new Button.OnClickListener() {
             public void onClick(View v) {
+                //On clear le loginVisiteur au cas où il resterai une info d'un essai failed
+                Global.loginVisiteur.clear();
                 //Envoi au serveur pour récup id, nom et prénom du visiteur
                 accesDistant = new AccesDistant();
                 Log.d("MyLog", "accesDistant: " + accesDistant);
                 valoriseProprietes();
-
                 accesDistant.envoi("connexion", convertLoginToJSONArray());
 
+                Log.d("MyLog", "onClick:connexion : loginVisiteur.size(): " + Global.loginVisiteur.size());
                 //Sérialisation des infos
-                Serializer.serialize(Global.filename, Global.listFraisMois, AccueilActivity.this);
-                Log.d("MyLog", "onClick:fin, login OK " + Global.loginVisiteur);
-                retourActivityPrincipale();
-
+                //Serializer.serialize(Global.filename, Global.listFraisMois, AccueilActivity.this);
+                Log.d("EtatLoginVisiteur", "accesDistant" + Global.loginVisiteur);
+                do {
+                    retourActivityPrincipale();
+                } while (Global.loginVisiteur.size() > 2 && Global.repServeur == true);
             }
         });
     }
@@ -74,17 +79,16 @@ public class AccueilActivity extends Activity {
         Global.loginVisiteur.add(this.login);
         Global.loginVisiteur.add(this.password);
 
-        Log.d("MyLog", "valoriseProprietes, valeurs saisies : " + this.login + "." + this.password);
-
     }
 
 
     /**
      * Retour à l'activité principale (le menu)
      */
-    private void retourActivityPrincipale() {
+    public void retourActivityPrincipale() {
         Intent intent = new Intent(AccueilActivity.this, MainActivity.class);
         startActivity(intent);
+        Global.repServeur = false;
     }
 
     /**
@@ -100,5 +104,6 @@ public class AccueilActivity extends Activity {
 
         return new JSONArray(liste);
     }
+
 
 }
