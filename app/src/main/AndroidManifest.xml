@@ -51,6 +51,9 @@
             android:name="com.gsb.suividevosfrais.LayoutListe"
             android:label="@string/title_activity_layout_liste" >
         </activity>-->
+        <activity
+            android:name="com.gsb.suividevosfrais.Transfert"
+            android:label="Transfert des données"></activity>
     </application>
     <uses-permission android:name="android.permission.INTERNET" />//permet la connexion distante
     HTTP

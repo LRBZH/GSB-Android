@@ -25,22 +25,20 @@ public class AccueilActivity extends Activity {
     //Propriétés de login gérées dans la vue
     private String login;
     private String password;
-    private Integer idVisiteur;
-    private String nomVisiteur;
-    private String prenomVisiteur;
 
+    /**
+     * Création de la vue
+     *
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Global.repServeur = false;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_accueil);
 
-
         // chargement des méthodes événementielles
         cmdLogin_clic(this.login, this.password);
-
-        Global.loginVisiteur.clear();
-
-
     }
 
 
@@ -58,19 +56,19 @@ public class AccueilActivity extends Activity {
                 valoriseProprietes();
                 accesDistant.envoi("connexion", convertLoginToJSONArray());
 
-                Log.d("MyLog", "onClick:connexion : loginVisiteur.size(): " + Global.loginVisiteur.size());
-                //Sérialisation des infos
-                //Serializer.serialize(Global.filename, Global.listFraisMois, AccueilActivity.this);
+                //A REVOIR!!
                 Log.d("EtatLoginVisiteur", "accesDistant" + Global.loginVisiteur);
+
                 do {
+                    Log.d("MyLog", "repServeur : " + Global.repServeur);
                     retourActivityPrincipale();
-                } while (Global.loginVisiteur.size() > 2 && Global.repServeur == true);
+                } while (Global.repServeur == true);
             }
         });
     }
 
     /**
-     * Valorisation des propriétés avec les informations affichées
+     * Valorisation des propriétés avec les informations entrées
      */
     private void valoriseProprietes() {
         this.login = ((EditText) findViewById(R.id.txtLogin)).getText().toString();
@@ -78,7 +76,6 @@ public class AccueilActivity extends Activity {
 
         Global.loginVisiteur.add(this.login);
         Global.loginVisiteur.add(this.password);
-
     }
 
 

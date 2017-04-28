@@ -3,7 +3,10 @@ package com.gsb.suividevosfrais;
 import java.io.File;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.Hashtable;
+import java.util.Locale;
 
 import android.content.Context;
 import android.content.Intent;
@@ -27,6 +30,12 @@ public abstract class Global {
 	public static final String filename = new String("save.fic") ;
 
     public static boolean repServeur = false;
+
+    //Récupération de la date courante
+    public static Calendar c = Calendar.getInstance(Locale.FRANCE);
+    public static Integer anneeEnCours = c.get(Calendar.YEAR);
+    public static Integer moisEnCours = c.get(Calendar.MONTH) + 1;
+    public static Integer anneeMois = anneeEnCours * 100 + moisEnCours;
 
 	/**
 	 * Modification de l'affichage de la date (juste le mois et l'année, sans le jour)

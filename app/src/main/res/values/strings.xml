@@ -11,5 +11,6 @@
     <string name="title_activity_hf">Suivi de vos frais</string>
     <string name="title_activity_hf_recap">Suivi de vos frais</string>
     <string name="title_activity_layout_liste">LayoutListe</string>
+    <string name="minDate">00/31/2017</string>
 
 </resources>

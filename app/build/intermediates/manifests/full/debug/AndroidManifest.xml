@@ -56,6 +56,10 @@
             android:label="@string/title_activity_layout_liste" >
         </activity>
         -->
+        <activity
+            android:name="com.gsb.suividevosfrais.Transfert"
+            android:label="Transfert des données" >
+        </activity>
     </application>
 
 </manifest>

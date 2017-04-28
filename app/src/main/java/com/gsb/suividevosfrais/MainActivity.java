@@ -46,8 +46,7 @@ public class MainActivity extends Activity {
         cmdMenu_clic(((Button)findViewById(R.id.cmdHf)), HfActivity.class) ;
         cmdMenu_clic(((Button)findViewById(R.id.cmdHfRecap)), HfRecapActivity.class) ;
         cmdMenu_clic(((Button) findViewById(R.id.cmdTransfert)), Transfert.class);
-        cmdTransfert_clic() ;
-        cmdLogout_clic();
+        //cmdLogout_clic();
 
     }
 
@@ -67,7 +66,6 @@ public class MainActivity extends Activity {
     	if (Global.listFraisMois==null) {
     		Global.listFraisMois = new Hashtable<Integer, FraisMois>() ;
     	}
-        //accesDistant.envoi("connexion", new JSONArray());
     }
 
     /**
@@ -82,23 +80,7 @@ public class MainActivity extends Activity {
     		}
     	}) ;
     }
-    
-    /**
-     * Cas particulier du bouton pour le transfert d'informations vers le serveur
-     */
-    private void cmdTransfert_clic() {
-    	((Button)findViewById(R.id.cmdTransfert)).setOnClickListener(new Button.OnClickListener() {
-    		public void onClick(View v) {
-    			// envoi les informations sérialisées vers le serveur
 
-                accesDistant = new AccesDistant();
-                Log.d("MyLog", "accesDistant: " + accesDistant);
-                accesDistant.envoi("enreg", new JSONArray());
-
-
-            }
-        }) ;
-    }
 
     /**
      * Ecouteur sur le bouton logout
