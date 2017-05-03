@@ -11,7 +11,14 @@
                     "endOffset": 108
                 },
                 "from": {
-                    "file": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/values/dimens.xml"
+                    "file": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/values/dimens.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 92,
+                        "endColumn": 57,
+                        "endOffset": 145
+                    }
                 }
             },
             {
@@ -23,7 +30,14 @@
                     "endOffset": 164
                 },
                 "from": {
-                    "file": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/values/dimens.xml"
+                    "file": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/values/dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 151,
+                        "endColumn": 55,
+                        "endOffset": 202
+                    }
                 }
             },
             {
@@ -35,7 +49,14 @@
                     "endOffset": 217
                 },
                 "from": {
-                    "file": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/values/strings.xml"
+                    "file": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 116,
+                        "endColumn": 52,
+                        "endOffset": 164
+                    }
                 }
             },
             {
@@ -47,7 +68,14 @@
                     "endOffset": 273
                 },
                 "from": {
-                    "file": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/values/strings.xml"
+                    "file": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 59,
+                        "endColumn": 55,
+                        "endOffset": 110
+                    }
                 }
             },
             {
@@ -59,7 +87,14 @@
                     "endOffset": 326
                 },
                 "from": {
-                    "file": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/values/strings.xml"
+                    "file": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 170,
+                        "endColumn": 52,
+                        "endOffset": 218
+                    }
                 }
             },
             {
@@ -90,7 +125,14 @@
                     "endOffset": 441
                 },
                 "from": {
-                    "file": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/values/strings.xml"
+                    "file": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 435,
+                        "endColumn": 67,
+                        "endOffset": 498
+                    }
                 }
             },
             {
@@ -102,7 +144,14 @@
                     "endOffset": 512
                 },
                 "from": {
-                    "file": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/values/strings.xml"
+                    "file": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 224,
+                        "endColumn": 70,
+                        "endOffset": 290
+                    }
                 }
             },
             {
@@ -114,7 +163,14 @@
                     "endOffset": 577
                 },
                 "from": {
-                    "file": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/values/strings.xml"
+                    "file": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 504,
+                        "endColumn": 64,
+                        "endOffset": 564
+                    }
                 }
             },
             {
@@ -126,7 +182,14 @@
                     "endOffset": 648
                 },
                 "from": {
-                    "file": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/values/strings.xml"
+                    "file": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 570,
+                        "endColumn": 70,
+                        "endOffset": 636
+                    }
                 }
             },
             {
@@ -138,7 +201,14 @@
                     "endOffset": 716
                 },
                 "from": {
-                    "file": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/values/strings.xml"
+                    "file": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 642,
+                        "endColumn": 67,
+                        "endOffset": 705
+                    }
                 }
             },
             {
@@ -150,7 +220,14 @@
                     "endOffset": 785
                 },
                 "from": {
-                    "file": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/values/strings.xml"
+                    "file": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 365,
+                        "endColumn": 68,
+                        "endOffset": 429
+                    }
                 }
             },
             {
@@ -162,7 +239,14 @@
                     "endOffset": 853
                 },
                 "from": {
-                    "file": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/values/strings.xml"
+                    "file": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 296,
+                        "endColumn": 67,
+                        "endOffset": 359
+                    }
                 }
             },
             {
@@ -170,25 +254,41 @@
                     "startLine": 15,
                     "startColumn": 4,
                     "startOffset": 858,
-                    "endLine": 17,
+                    "endLine": 21,
                     "endColumn": 12,
-                    "endOffset": 936
+                    "endOffset": 1144
                 },
                 "from": {
-                    "file": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/values/styles.xml"
+                    "file": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/values/styles.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 191,
+                        "endLine": 12,
+                        "endColumn": 12,
+                        "endOffset": 481
+                    }
                 }
             },
             {
                 "to": {
-                    "startLine": 18,
+                    "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 941,
-                    "endLine": 20,
+                    "startOffset": 1149,
+                    "endLine": 24,
                     "endColumn": 12,
-                    "endOffset": 1008
+                    "endOffset": 1304
                 },
                 "from": {
-                    "file": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/values/styles.xml"
+                    "file": "/home/nymroe/Cours/bundlePPE2/SuiviDeVosFrais/app/src/main/res/values/styles.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 522,
+                        "endLine": 17,
+                        "endColumn": 12,
+                        "endOffset": 679
+                    }
                 }
             }
         ]

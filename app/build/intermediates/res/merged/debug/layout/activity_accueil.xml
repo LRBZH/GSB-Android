@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccueilActivity">
+
+    //layout principal
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        Layout accueil
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@drawable/logogsb" />
+        </LinearLayout>
+
+        //Layout Message
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.62"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/lblAccueil"
+                android:layout_width="329dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center"
+                android:gravity="center"
+                android:text="Bienvenue sur l'application GSB "
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget" />
+            //android:textAppearance="@style/TextAppearance.AppCompat.Button"
+
+        </LinearLayout>
+
+        //Layout saisie
+
+        <LinearLayout
+            android:layout_width="297dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/lblID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Identifiant      "
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+            <EditText
+                android:id="@+id/txtLogin"
+                android:layout_width="204dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/lblPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:text="Mot de passe "
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+            <EditText
+                android:id="@+id/txtPassword"
+                android:layout_width="163dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:layout_weight="0.39" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/cmdLogin"
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:text="OK"
+                android:textSize="15sp"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

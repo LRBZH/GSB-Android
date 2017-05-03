@@ -133,9 +133,6 @@ public class FraisMois implements Serializable {
 	public JSONArray converToJSONArray() {
 		List liste = new ArrayList();
 
-		//gérer le tableau des frais de plusieurs mois :
-		//?????
-
 		//infos visiteur
 		liste.add(nom);
 		liste.add(prenom);

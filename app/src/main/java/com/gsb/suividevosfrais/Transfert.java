@@ -54,13 +54,11 @@ public class Transfert extends Activity {
         Log.d("test", "anneMois: " + Global.anneeMois);
         for (int k = (Global.anneeMois - 2); k <= Global.anneeMois; k++) {
             try {
-                Log.d("MyLog", "cmdTransfert: Global.listFraisMois.get(k).getLesFraisHf().get(0).getMotif() : " + Global.listFraisMois.get(k).getLesFraisHf().get(0).getMotif());
+                Log.d("MyLog", "cmdTransfert: Global.listFraisMois.get(k).getMois : " + Global.listFraisMois.get(k).getMois());
                 accesDistant.envoi("enreg", convertToJSONArray(k));
             } catch (Exception e) {
                 Log.d("Exception", "valeur nulle ");
             }
-
-
         }
 
         //Vider les données sérialisées après envoi
@@ -109,7 +107,8 @@ public class Transfert extends Activity {
         Log.d("MyLog", "nuitées " + Global.listFraisMois.get(k).getNuitee());
         liste.add(Global.listFraisMois.get(k).getRepas());//5
         Log.d("MyLog", "repas :  " + Global.listFraisMois.get(k).getRepas());
-
+        //liste.add(Global.listFraisMois.get(k).getLesFraisHf());//6
+        //Log.d("MyLog", "getFraisHf1erDate: " + Global.listFraisMois.get(k).getLesFraisHf().get(0).getJour());
         Log.d("Affichage des données ", liste.toString());
 
             /*//parcours des frais HF, à revoir !! (comment les insérer ds la requete ??
