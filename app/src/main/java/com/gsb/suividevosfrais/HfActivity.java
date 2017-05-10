@@ -16,11 +16,11 @@ public class HfActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_hf);
-		// mise à 0 du montant
-		((EditText)findViewById(R.id.txtHf)).setText("0") ;
-        // chargement des méthodes événementielles
-		imgReturn_clic() ;
-		cmdAjouter_clic() ;
+        // mise a 0 du montant
+        ((EditText) findViewById(R.id.txtHf)).setText("0");
+        // chargement des methodes evenementielles
+        imgReturn_clic();
+        cmdAjouter_clic() ;
 	}
 
 	@Override
@@ -42,7 +42,7 @@ public class HfActivity extends Activity {
     }
 
     /**
-     * Sur le clic du bouton ajouter : enregistrement dans la liste et sérialisation
+     * Sur le clic du bouton ajouter : enregistrement dans la liste et serialisation
      */
     private void cmdAjouter_clic() {
     	((Button)findViewById(R.id.cmdHfAjouter)).setOnClickListener(new Button.OnClickListener() {
@@ -58,25 +58,25 @@ public class HfActivity extends Activity {
 	 * Enregistrement dans la liste du nouveau frais hors forfait
 	 */
 	private void enregListe() {
-		// récupération des informations saisies
-		Integer annee = ((DatePicker)findViewById(R.id.datHf)).getYear() ;
-		Integer mois = ((DatePicker)findViewById(R.id.datHf)).getMonth() + 1 ;
+        // recuperation des informations saisies
+        Integer annee = ((DatePicker) findViewById(R.id.datHf)).getYear();
+        Integer mois = ((DatePicker)findViewById(R.id.datHf)).getMonth() + 1 ;
 		Integer jour = ((DatePicker)findViewById(R.id.datHf)).getDayOfMonth() ;
 		Integer montant = Integer.parseInt(((EditText)findViewById(R.id.txtHf)).getText().toString()) ;
 		String motif = ((EditText)findViewById(R.id.txtHfMotif)).getText().toString() ;
 		// enregistrement dans la liste
 		Integer key = annee*100+mois ;
 		if (!Global.listFraisMois.containsKey(key)) {
-			// creation du mois et de l'annee s'ils n'existent pas déjà
-			Global.listFraisMois.put(key, new FraisMois(annee, mois)) ;
-		}
+            // creation du mois et de l'annee s'ils n'existent pas deja
+            Global.listFraisMois.put(key, new FraisMois(annee, mois));
+        }
 		Global.listFraisMois.get(key).addFraisHf(montant, motif, jour) ;		
 	}
 
 	/**
-	 * Retour à l'activité principale (le menu)
-	 */
-	private void retourActivityPrincipale() {
+     * Retour a l'activite principale (le menu)
+     */
+    private void retourActivityPrincipale() {
 		Intent intent = new Intent(HfActivity.this, MainActivity.class) ;
 		startActivity(intent) ;   					
 	}

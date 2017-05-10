@@ -25,7 +25,7 @@ import android.widget.Button;
 public class MainActivity extends Activity {
 
     private static AccesDistant accesDistant;
-    public static final int RESULT_Main = 1; //pour le résultat
+    public static final int RESULT_Main = 1; //pour le resultat
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,9 +36,9 @@ public class MainActivity extends Activity {
             startActivityForResult(new Intent(MainActivity.this, AccueilActivity.class), RESULT_Main);
         }
         setContentView(R.layout.activity_main);
-        // récupération des informations sérialisées
+        // recuperation des informations serialisees
         recupSerialize() ;
-        // chargement des méthodes événementielles
+        // chargement des methodes evenementielles
         cmdMenu_clic(((Button)findViewById(R.id.cmdKm)), KmActivity.class) ;
         cmdMenu_clic(((Button)findViewById(R.id.cmdRepas)), RepasActivity.class) ;
         cmdMenu_clic(((Button)findViewById(R.id.cmdNuitee)), NuiteeActivity.class) ;
@@ -58,25 +58,25 @@ public class MainActivity extends Activity {
     }
     
     /**
-     * Récupère la sérialisation si elle existe
+     * Recupere la serialisation si elle existe
      */
     private void recupSerialize() {
     	Global.listFraisMois = (Hashtable<Integer, FraisMois>) Serializer.deSerialize(Global.filename, MainActivity.this) ;
-    	// si rien n'a été récupéré, il faut créer la liste
-    	if (Global.listFraisMois==null) {
-    		Global.listFraisMois = new Hashtable<Integer, FraisMois>() ;
+        // si rien n'a ete recupere, il faut creer la liste
+        if (Global.listFraisMois == null) {
+            Global.listFraisMois = new Hashtable<Integer, FraisMois>() ;
     	}
     }
 
     /**
-     * Sur la sélection d'un bouton dans l'activité principale ouverture de l'activité correspondante
+     * Sur la selection d'un bouton dans l'activite principale ouverture de l'activite correspondante
      */
     private void cmdMenu_clic(Button button, final Class classe) {
     	button.setOnClickListener(new Button.OnClickListener() {
     		public void onClick(View v) {
-    			// ouvre l'activité 
-    			Intent intent = new Intent(MainActivity.this, classe) ;
-    			startActivity(intent) ;  			
+                // ouvre l'activite
+                Intent intent = new Intent(MainActivity.this, classe);
+                startActivity(intent) ;
     		}
     	}) ;
     }
@@ -85,9 +85,9 @@ public class MainActivity extends Activity {
     /**
      * Ecouteur sur le bouton logout
      */
-    private void cmdLogout_clic() {
+    /*private void cmdLogout_clic() {
         Button button = (Button) findViewById(R.id.cmdLogout);
-        // Création du listener du bouton cancel (on sort de l'appli)
+        // Creation du listener du bouton cancel (on sort de l'appli)
         button.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
@@ -95,16 +95,16 @@ public class MainActivity extends Activity {
             }
 
         });
-    }
+    }*/
 
     /**
-     * Méthode pour sortir de l'application
+     * Methode pour sortir de l'application
      *
      * @param success
      * @param i
      */
     public void quit(boolean success, Intent i) {
-        // On envoie un résultat qui va permettre de quitter l'appli
+        // On envoie un resultat qui va permettre de quitter l'appli
         Global.loginVisiteur.clear();
         Global.repServeur = false;
         setResult((success) ? Activity.RESULT_OK : Activity.RESULT_CANCELED, i);

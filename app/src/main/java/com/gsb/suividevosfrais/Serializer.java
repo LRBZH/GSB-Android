@@ -16,14 +16,14 @@ import android.os.Environment;
 import android.util.Log;
 
 /**
- * Classe qui permet de sérialiser et désérialiser des objets
+ * Classe qui permet de serialiser et deserialiser des objets
  * @author Emds
  *
  */
 public abstract class Serializer {
 
 	/**
-	 * Sérialisation d'un objet
+	 * Serialisation d'un objet
 	 * @param filename
 	 * @param object
 	 */
@@ -38,17 +38,17 @@ public abstract class Serializer {
 				oos.close() ;
 				Log.d("Tools : ", "object serialized: ");
 			} catch (IOException e) {
-				// erreur de sérialisation
+				// erreur de serialisation
 				e.printStackTrace();
 			}
 		} catch (FileNotFoundException e) {
-			// fichier non trouvé
+			// fichier non trouve
 			e.printStackTrace();
 		}
 	}
 	
 	/**
-	 * Désérialisation d'un objet
+	 * Deserialisation d'un objet
 	 * @param filename
 	 * @param context
 	 * @return
@@ -75,7 +75,7 @@ public abstract class Serializer {
 				e.printStackTrace();
 			}
 		} catch (FileNotFoundException e) {
-			// fichier non trouvé
+			// fichier non trouve
 			e.printStackTrace();
 		}
 		return null ;		

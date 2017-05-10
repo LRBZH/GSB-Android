@@ -19,7 +19,7 @@ import static com.gsb.suividevosfrais.R.id.datRepas;
 
 public class RepasActivity extends Activity {
 
-    // informations affichées dans l'activité
+    // informations affichees dans l'activite
     private Integer annee;
     private Integer mois;
     private Integer qte;
@@ -31,9 +31,9 @@ public class RepasActivity extends Activity {
         setContentView(R.layout.activity_repas);
         // modification de l'affichage du DatePicker
         Global.changeAfficheDate((DatePicker) findViewById(datRepas));
-        // valorisation des propriétés
+        // valorisation des proprietes
         valoriseProprietes();
-        // chargement des méthodes événementielles
+        // chargement des methodes evenementielles
         imgReturn_clic();
         cmdValider_clic();
         cmdPlus_clic();
@@ -49,12 +49,12 @@ public class RepasActivity extends Activity {
     }
 
     /**
-     * Valorisation des propriétés avec les informations affichées
+     * Valorisation des proprietes avec les informations affichees
      */
     private void valoriseProprietes() {
         annee = ((DatePicker) findViewById(R.id.datRepas)).getYear();
         mois = ((DatePicker) findViewById(R.id.datRepas)).getMonth() + 1;
-        // récupération de la qte correspondant au mois actuel
+        // recuperation de la qte correspondant au mois actuel
         qte = 0;
         Integer key = annee * 100 + mois;
         if (Global.listFraisMois.containsKey(key)) {
@@ -75,7 +75,7 @@ public class RepasActivity extends Activity {
     }
 
     /**
-     * Sur le clic du bouton valider : sérialisation
+     * Sur le clic du bouton valider : serialisation
      */
     private void cmdValider_clic() {
         ((Button) findViewById(R.id.cmdRepasValider)).setOnClickListener(new Button.OnClickListener() {
@@ -87,7 +87,7 @@ public class RepasActivity extends Activity {
     }
 
     /**
-     * Sur le clic du bouton plus : ajout de 10 dans la quantité
+     * Sur le clic du bouton plus : ajout de 10 dans la quantite
      */
     private void cmdPlus_clic() {
         ((Button) findViewById(R.id.cmdRepasPlus)).setOnClickListener(new Button.OnClickListener() {
@@ -99,7 +99,7 @@ public class RepasActivity extends Activity {
     }
 
     /**
-     * Sur le clic du bouton moins : enlève 10 dans la quantité si c'est possible
+     * Sur le clic du bouton moins : enleve 10 dans la quantite si c'est possible
      */
     private void cmdMoins_clic() {
         ((Button) findViewById(R.id.cmdRepasMoins)).setOnClickListener(new Button.OnClickListener() {
@@ -111,7 +111,7 @@ public class RepasActivity extends Activity {
     }
 
     /**
-     * Sur le changement de date : mise à jour de l'affichage de la qte
+     * Sur le changement de date : mise a jour de l'affichage de la qte
      */
     private void dat_clic() {
         final DatePicker uneDate = (DatePicker) findViewById(R.id.datRepas);
@@ -124,7 +124,7 @@ public class RepasActivity extends Activity {
     }
 
     /**
-     * Enregistrement dans la zone de texte et dans la liste de la nouvelle qte, à la date choisie
+     * Enregistrement dans la zone de texte et dans la liste de la nouvelle qte, a la date choisie
      */
     private void enregNewQte() {
         // enregistrement dans la zone de texte
@@ -132,14 +132,14 @@ public class RepasActivity extends Activity {
         // enregistrement dans la liste
         Integer key = annee * 100 + mois;
         if (!Global.listFraisMois.containsKey(key)) {
-            // creation du mois et de l'annee s'ils n'existent pas déjà
+            // creation du mois et de l'annee s'ils n'existent pas deja
             Global.listFraisMois.put(key, new FraisMois(annee, mois));
         }
         Global.listFraisMois.get(key).setRepas(qte);
     }
 
     /**
-     * Retour à l'activité principale (le menu)
+     * Retour a l'activite principale (le menu)
      */
     private void retourActivityPrincipale() {
         Intent intent = new Intent(RepasActivity.this, MainActivity.class) ;

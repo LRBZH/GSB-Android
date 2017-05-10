@@ -9,20 +9,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Classe métier contenant les informations des frais d'un mois
+ * Classe metier contenant les informations des frais d'un mois
  *
  */
 public class FraisMois implements Serializable {
-	//Identification du visiteur qui se connecte à l'application
+	//Identification du visiteur qui se connecte a l'application
 	private String nom;
 	private String prenom;
 
-	//Propriétés des frais du mois
-	private Integer mois ; // mois concerné
-	private Integer annee ; // année concernée
-	private Integer etape ; // nombre d'étapes du mois
+	//Proprietes des frais du mois
+	private Integer mois; // mois concerne
+	private Integer annee; // annee concernee
+	private Integer etape; // nombre d'etapes du mois
 	private Integer km ; // nombre de km du mois
-	private Integer nuitee ; // nombre de nuitées du mois
+	private Integer nuitee; // nombre de nuitees du mois
 	private Integer repas ; // nombre de repas du mois
 	private ArrayList<FraisHf> lesFraisHf ; // liste des frais hors forfait du mois
 	
@@ -145,7 +145,7 @@ public class FraisMois implements Serializable {
 		liste.add(nuitee);
 		liste.add(repas);
 		//infos Frais HF
-		//liste.add(lesFraisHf); //à mettre en array aussi ?
+
 		return new JSONArray(liste);
 	}
 	

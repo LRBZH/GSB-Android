@@ -30,14 +30,14 @@ public class Transfert extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_transfert);
 
-        // chargement des méthodes événementielles
+        // chargement des methodes evenementielles
         cmdTransfert(Global.loginVisiteur.get(0), Global.loginVisiteur.get(1));
         imgTransfertReturn_clic();
-        Log.d("MyLog", "onCreate: données présentes : " + Global.listFraisMois.size());
+        Log.d("MyLog", "onCreate: donnees presentes : " + Global.listFraisMois.size());
     }
 
     /**
-     * A l'ouverture de la vue, le transfert des informations est lancé
+     * A l'ouverture de la vue, le transfert des informations est lance
      *
      * @param leLogin
      * @param lePwd
@@ -49,7 +49,7 @@ public class Transfert extends Activity {
         Log.d("MyLog", "listFraisMois  " + Global.listFraisMois);
         Log.d("MyLog", "onClick:transfert : listFraisMois.size(): " + Global.listFraisMois.size());
 
-        //parcours de listFraisMois et récup des données au format JSONArray avant envoi
+        //parcours de listFraisMois et recup des donnees au format JSONArray avant envoi
 
         Log.d("test", "anneMois: " + Global.anneeMois);
         for (int k = (Global.anneeMois - 2); k <= Global.anneeMois; k++) {
@@ -61,7 +61,7 @@ public class Transfert extends Activity {
             }
         }
 
-        //Vider les données sérialisées après envoi
+        //Vider les donnees serialisees apres envoi
 
     }
 
@@ -78,7 +78,7 @@ public class Transfert extends Activity {
 
 
     /**
-     * Retour à l'activité principale (le menu)
+     * Retour a l'activite principale (le menu)
      */
     public void retourActivityPrincipale() {
         Intent intent = new Intent(Transfert.this, MainActivity.class);
@@ -87,7 +87,7 @@ public class Transfert extends Activity {
     }
 
     /**
-     * Création d'un JSONArray pour utilisation dans la page serveur PHP
+     * Creation d'un JSONArray pour utilisation dans la page serveur PHP
      *
      * @return un JSONArray
      */
@@ -104,14 +104,14 @@ public class Transfert extends Activity {
         liste.add(Global.listFraisMois.get(k).getKm());//3
         Log.d("MyLog", "km :  " + Global.listFraisMois.get(k).getKm());
         liste.add(Global.listFraisMois.get(k).getNuitee());//4
-        Log.d("MyLog", "nuitées " + Global.listFraisMois.get(k).getNuitee());
+        Log.d("MyLog", "nuitees " + Global.listFraisMois.get(k).getNuitee());
         liste.add(Global.listFraisMois.get(k).getRepas());//5
         Log.d("MyLog", "repas :  " + Global.listFraisMois.get(k).getRepas());
         //liste.add(Global.listFraisMois.get(k).getLesFraisHf());//6
         //Log.d("MyLog", "getFraisHf1erDate: " + Global.listFraisMois.get(k).getLesFraisHf().get(0).getJour());
-        Log.d("Affichage des données ", liste.toString());
+        Log.d("Affichage des donnees ", liste.toString());
 
-            /*//parcours des frais HF, à revoir !! (comment les insérer ds la requete ??
+            /*//parcours des frais HF, a revoir !! (comment les inserer ds la requete ??
             ArrayList<FraisHf> lesFraisHf = Global.listFraisMois.get(k).getLesFraisHf();
             Log.d("MyLog", "lesfraishf longueur : " + lesFraisHf.size());
             for(Integer j = 0; j < lesFraisHf.size(); j++){

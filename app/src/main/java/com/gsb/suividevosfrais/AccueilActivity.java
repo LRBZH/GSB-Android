@@ -22,12 +22,12 @@ public class AccueilActivity extends Activity {
 
     private static AccesDistant accesDistant;
 
-    //Propriétés de login gérées dans la vue
+    //Proprietes de login gerees dans la vue
     private String login;
     private String password;
 
     /**
-     * Création de la vue
+     * Creation de la vue
      *
      * @param savedInstanceState
      */
@@ -37,20 +37,20 @@ public class AccueilActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_accueil);
 
-        // chargement des méthodes événementielles
+        // chargement des methodes evenementielles
         cmdLogin_clic(this.login, this.password);
     }
 
 
     /**
-     * Sur le clic du bouton valider : sérialisation
+     * Sur le clic du bouton valider : serialisation
      */
     private synchronized void cmdLogin_clic(final String leLogin, final String lePwd) {
         ((Button) findViewById(R.id.cmdLogin)).setOnClickListener(new Button.OnClickListener() {
             public void onClick(View v) {
-                //On clear le loginVisiteur au cas où il resterai une info d'un essai failed
+                //On clear le loginVisiteur au cas ou il resterai une info d'un essai failed
                 Global.loginVisiteur.clear();
-                //Envoi au serveur pour récup id, nom et prénom du visiteur
+                //Envoi au serveur pour recup id, nom et prenom du visiteur
                 accesDistant = new AccesDistant();
                 Log.d("MyLog", "accesDistant: " + accesDistant);
                 valoriseProprietes();
@@ -68,7 +68,7 @@ public class AccueilActivity extends Activity {
     }
 
     /**
-     * Valorisation des propriétés avec les informations entrées
+     * Valorisation des proprietes avec les informations entrees
      */
     private void valoriseProprietes() {
         this.login = ((EditText) findViewById(R.id.txtLogin)).getText().toString();
@@ -80,7 +80,7 @@ public class AccueilActivity extends Activity {
 
 
     /**
-     * Retour à l'activité principale (le menu)
+     * Retour a l'activite principale (le menu)
      */
     public void retourActivityPrincipale() {
         Intent intent = new Intent(AccueilActivity.this, MainActivity.class);
@@ -89,7 +89,7 @@ public class AccueilActivity extends Activity {
     }
 
     /**
-     * Création d'un JSONArray pour utilisation dans la page serveur PHP
+     * Creation d'un JSONArray pour utilisation dans la page serveur PHP
      *
      * @return un JSONArray
      */

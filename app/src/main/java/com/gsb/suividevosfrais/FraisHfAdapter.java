@@ -20,11 +20,11 @@ public class FraisHfAdapter extends BaseAdapter {
 
 	ArrayList<FraisHf> lesFrais ; // liste des frais du mois
 	LayoutInflater inflater ;
-	Integer key ;  // annee et mois (clé dans la liste)
-	Context context ; // contexte pour gérer la sérialisation
+	Integer key;  // annee et mois (cle dans la liste)
+	Context context; // contexte pour gerer la serialisation
 	
 	/**
-	 * Constructeur de l'adapter pour valoriser les propriétés
+	 * Constructeur de l'adapter pour valoriser les proprietes
 	 * @param context
 	 * @param lesFrais
 	 * @param key
@@ -37,7 +37,7 @@ public class FraisHfAdapter extends BaseAdapter {
 	}
 	
 	/**
-	 * retourne le nombre d'éléments de la listview
+	 * retourne le nombre d'elements de la listview
 	 */
 	@Override
 	public int getCount() {
@@ -45,7 +45,7 @@ public class FraisHfAdapter extends BaseAdapter {
 	}
 
 	/**
-	 * retourne l'item de la listview à un index précis
+	 * retourne l'item de la listview a un index precis
 	 */
 	@Override
 	public Object getItem(int index) {
@@ -53,7 +53,7 @@ public class FraisHfAdapter extends BaseAdapter {
 	}
 
 	/**
-	 * retourne l'index de l'élément actuel
+	 * retourne l'index de l'element actuel
 	 */
 	@Override
 	public long getItemId(int index) {
@@ -61,7 +61,7 @@ public class FraisHfAdapter extends BaseAdapter {
 	}
 
 	/**
-	 * structure contenant les éléments d'une ligne
+	 * structure contenant les elements d'une ligne
 	 */
 	private class ViewHolder {
 		TextView txtListJour ;
@@ -94,12 +94,12 @@ public class FraisHfAdapter extends BaseAdapter {
 		holder.btnHfSuppr.setTag(index);
 
 
-		//paramétrage du bouton Suppr avec un écouteur
+		//parametrage du bouton Suppr avec un ecouteur
 		holder.btnHfSuppr.setOnClickListener(new View.OnClickListener() {
 			@Override
-			public void onClick(View v) {//code à la suppression
+			public void onClick(View v) {//code a la suppression
 
-				//On récupère l'indice de la ligne concernée
+				//On recupere l'indice de la ligne concernee
 				int position = (Integer) v.getTag();
 				Log.d("MyLog", "position : " + position);
 				//on avertit le controleur qu'il faut supprimer un profil

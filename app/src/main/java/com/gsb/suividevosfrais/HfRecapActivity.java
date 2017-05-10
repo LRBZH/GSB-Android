@@ -35,11 +35,11 @@ public class HfRecapActivity extends Activity {
 
 		// modification de l'affichage du DatePicker
 		Global.changeAfficheDate((DatePicker) findViewById(R.id.datHfRecap)) ;
-		// valorisation des propriétés
-		afficheListe() ;
-        // chargement des méthodes événementielles
-		imgReturn_clic() ;
-		dat_clic() ;
+        // valorisation des proprietes
+        afficheListe();
+        // chargement des methodes evenementielles
+        imgReturn_clic();
+        dat_clic() ;
 	}
 
 	@Override
@@ -50,14 +50,14 @@ public class HfRecapActivity extends Activity {
 	}
 
 	/**
-	 * Affiche la liste des frais hors forfaits de la date sélectionnée
-	 */
-	public void afficheListe() {
+     * Affiche la liste des frais hors forfaits de la date selectionnee
+     */
+    public void afficheListe() {
 		Integer annee = ((DatePicker)findViewById(R.id.datHfRecap)).getYear() ;
 		Integer mois = ((DatePicker)findViewById(R.id.datHfRecap)).getMonth() + 1 ;
-		// récupération des frais HF pour cette date
-		Integer key = annee*100 + mois ;
-		ArrayList<FraisHf> liste = null ;
+        // recuperation des frais HF pour cette date
+        Integer key = annee * 100 + mois;
+        ArrayList<FraisHf> liste = null ;
 		if (Global.listFraisMois.containsKey(key)) {
 			liste = Global.listFraisMois.get(key).getLesFraisHf() ;
 		}else{
@@ -82,7 +82,7 @@ public class HfRecapActivity extends Activity {
     }
 
     /**
-     * Sur le changement de date : mise à jour de l'affichage de la qte
+     * Sur le changement de date : mise a jour de l'affichage de la qte
      */
 	private void dat_clic() {
 		final DatePicker uneDate = (DatePicker) findViewById(R.id.datHfRecap);
@@ -96,9 +96,9 @@ public class HfRecapActivity extends Activity {
 
 
 	/**
-	 * Retour à l'activité principale (le menu)
-	 */
-	private void retourActivityPrincipale() {
+     * Retour a l'activite principale (le menu)
+     */
+    private void retourActivityPrincipale() {
 		Intent intent = new Intent(HfRecapActivity.this, MainActivity.class) ;
 		startActivity(intent) ;   					
 	}
